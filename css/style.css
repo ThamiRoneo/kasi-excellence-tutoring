@@ -1,0 +1,230 @@
+/*general styling*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    color: black;
+}
+
+/*root*/
+:root {
+    /* typography */
+    --font-heading: 'Montserrat';
+    --font-body: 'Roboto';
+
+    /* color palette */
+    --primary-color: #1A2238;
+    --secondary-color: #F4B413;
+    --accent-color: #007A33;
+    --bg-white: #FFFFFF;
+    --bg-off-white: #989494;
+    --text-main: #ffffff;
+
+    /* font-sizing */
+    --h1-font: 3.75rem;
+    --h2-font: 3.125rem;
+    --h3-font: 1.563rem;
+    --h4-font: 1.25rem;
+    --h5-font: 1.125rem;
+    --h6-font: .95rem;
+    --para-font: 1rem;
+    --menu-icon: 2.25rem;
+    --media-icon: 1.875rem;
+    --label-font: 2.5rem;
+}
+
+body {
+    font-family: var(--font-body), sans-serif;
+    color: var(--text-main);
+    background-color: var(--bg-white);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10001;
+    padding: 20px 15%;
+    background-color: transparent;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+.logo {
+    color: var(--secondary-color);
+    font-size: var(--h4-font);
+    font-weight: 600;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links a {
+    color: var(--bg-off-white);
+    font-size: var(--h5-font);
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-family: var(--font-heading), sans-serif;
+    transition: all .42s;
+}
+
+.menu-links a:hover {
+    color: var(--secondary-color);
+}
+
+/*website section padding*/
+section {
+    padding: 250px 10% 40px;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+
+.home-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1,
+h3,
+p {
+    margin-bottom: 3rem;
+}
+
+.main-head h1 {
+    font-size: var(--h1-font);
+    color: var(--bg-white);
+    font-family: var(--font-heading), sans-serif;
+}
+
+.sub-head h3 {
+    font-size: var(--h3-font);
+    color: var(--secondary-color);
+    font-family: var(--font-heading), sans-serif;
+    line-height: 29px;
+}
+
+.body-main p {
+    font-size: var(--para-font);
+    color: var(--bg-off-white);
+    font-family: var(--font-body), sans-serif;
+    width: 690px;
+    line-height: 27px;
+}
+
+.body-main {
+    width: 100%;
+}
+
+.btns {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btns h6 {
+    font-size: var(--h6-font);
+}
+
+.consultation-btn {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 30px;
+    margin-bottom: 1rem;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.consultation-btn i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+}
+
+.consultation-btn:hover {
+    background-color: var(--bg-off-white);
+    transition: background-color ease .5ms;
+}
+
+.about-btn {
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+    padding: 10px 22px;
+    display: inherit;
+    background-color: var(--primary-color);
+}
+
+
+.about-btn h6,
+.about-btn h6>i {
+    color: var(--secondary-color);
+}
+
+.home-bottom {
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
+
+.home-main-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-main-bottom span {
+    padding: 0 30px 0 30px;
+}
+
+.subjects__main-headline h1,
+.subjects__main-headline h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subjects__main-headline h4 {
+    color: var(--bg-off-white);
+}
+
+.subjects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subject-card {
+    border: .1rem solid var(--bg-off-white);
+    border-radius: 6px;
+    padding: 80px 8% 60px;
+    margin-right: 8px;
+}
+
+.subject-description p {
+    color: var(--bg-off-white);
+    justify-content: flex-start;
+    width: 300px;
+}
