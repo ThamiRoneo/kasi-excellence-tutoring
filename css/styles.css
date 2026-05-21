@@ -273,6 +273,13 @@ body {
     line-height: 1;
 }
 
+.btn-wrap {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
 .btn-gold a {
     color: var(--navy);
 }
@@ -967,10 +974,6 @@ footer {
     margin: 0 auto;
 }
 
-.eyebrow {
-    color: var(--gold-pale);
-}
-
 .section-sub {
     color: var(--cream-dim);
 }
@@ -1167,6 +1170,13 @@ footer {
     gap: 24px;
 }
 
+.service-card-body p {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
 @media (min-width: 640px) {
     .service-card-body {
         grid-template-columns: 1.2fr 1fr;
@@ -1216,6 +1226,10 @@ footer {
     color: var(--muted);
     line-height: 1.6;
     margin-top: 4px;
+}
+
+.service-note~div {
+    margin-top: 20px;
 }
 
 /* Pricing */
