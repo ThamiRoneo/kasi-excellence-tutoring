@@ -323,7 +323,6 @@ body {
 
 .btn-dark {
     background: var(--navy);
-    /* color: var(--gold-lt); */
     border-color: var(--navy);
 }
 
