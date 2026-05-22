@@ -79,22 +79,39 @@ body {
 }
 
 .nav-logo {
-    font-family: var(--font-head);
-    font-weight: 800;
-    font-size: 18px;
-    color: var(--gold-lt);
-    cursor: pointer;
-    letter-spacing: -0.3px;
-    line-height: 1.1;
     flex-shrink: 0;
 }
 
-.nav-logo a {
-    color: var(--gold);
+.nav-logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     cursor: pointer;
 }
 
-.nav-logo span {
+.nav-logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    display: block;
+}
+
+.nav-logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+    letter-spacing: -0.3px;
+}
+
+.nav-logo-name {
+    font-family: var(--font-head);
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--gold);
+}
+
+.nav-logo-text > span:last-child {
     display: block;
     font-family: var(--font-mono);
     font-size: 9px;
