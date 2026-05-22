@@ -511,6 +511,10 @@ footer {
     margin-top: 4px;
 }
 
+.footer-socials {
+    margin-top: 16px;
+}
+
 .social-icon {
     width: 36px;
     height: 36px;
@@ -1508,6 +1512,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 6px;
+    margin-bottom: 20px;
 }
 
 .form-label {
