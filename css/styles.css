@@ -1326,6 +1326,14 @@ footer {
     flex-wrap: wrap;
 }
 
+.wa-strip-inner a {
+    background: #fff;
+    color: var(--green-wa);
+    border-color: #fff;
+    font-size: 13px;
+
+}
+
 .wa-strip-title {
     font-family: var(--font-head);
     font-weight: 700;
@@ -1351,6 +1359,14 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
+}
+
+.contact-inner h2 {
+    margin-bottom: 4px;
+}
+
+.contact-inner p {
+    margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
