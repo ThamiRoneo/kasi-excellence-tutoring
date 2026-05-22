@@ -89,6 +89,12 @@ body {
     flex-shrink: 0;
 }
 
+.nav-logo img {
+    object-fit: cover;
+    width: 10%;
+    height: auto;
+}
+
 .nav-logo a {
     color: var(--gold);
     cursor: pointer;
@@ -694,21 +700,12 @@ footer {
     transform: rotate(-20deg);
 }
 
-.hero-image-icon {
-    font-size: 48px;
+.hero-image-cap {
+    color: rgba(247, 243, 238, 0.3);
     position: relative;
     z-index: 1;
 }
 
-.hero-image-cap {
-    font-family: var(--font-mono);
-    font-size: 10px;
-    color: rgba(247, 243, 238, 0.3);
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    line-height: 1.5;
-}
 
 @media (min-width: 768px) {
     .hero-image {
@@ -885,21 +882,20 @@ footer {
     transform: rotate(-18deg);
 }
 
-.about-image-icon {
-    font-size: 52px;
-    position: relative;
-    z-index: 1;
-}
-
 .about-image-cap {
-    font-family: var(--font-mono);
-    font-size: 10px;
     color: rgba(247, 243, 238, 0.3);
     position: relative;
     z-index: 1;
-    text-align: center;
-    line-height: 1.5;
     padding: 0 16px;
+}
+
+.about-img-cap img,
+.hero-img-cap img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+
 }
 
 @media (min-width: 768px) {
