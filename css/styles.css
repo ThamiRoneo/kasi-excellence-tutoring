@@ -228,10 +228,11 @@ body {
    SHARED COMPONENTS
 ══════════════════════════════════════ */
 
-/* Eyebrow label */
+/* git status label */
 .eyebrow {
     font-family: var(--font-mono);
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 600;
     letter-spacing: 2.5px;
     text-transform: uppercase;
     color: var(--gold);
