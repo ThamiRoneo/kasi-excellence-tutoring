@@ -228,7 +228,7 @@ body {
    SHARED COMPONENTS
 ══════════════════════════════════════ */
 
-/* git status label */
+/* label */
 .eyebrow {
     font-family: var(--font-mono);
     font-size: 12px;
